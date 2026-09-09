@@ -8,6 +8,13 @@ void fillArray(int (&arr)[10]) {
         arr[i] = rand() % 100 + 1;
     }
 }
+// Функция вывода массива
+void printArray(const int (&arr)[10]) {
+    for (const auto& element : arr) {
+        std::cout << element << " ";
+    }
+    std::cout << std::endl;
+}
 
 int main() {
     srand(static_cast<unsigned int>(time(nullptr)));
@@ -16,10 +23,8 @@ int main() {
     
     fillArray(myArray);
     
-    for (int i = 0; i < 10; ++i) {
-        std::cout << myArray[i] << " ";
-    }
-    std::cout << std::endl;
+    std::cout << "Исходный массив: ";
+    printArray(myArray);
     
     return 0;
 }
