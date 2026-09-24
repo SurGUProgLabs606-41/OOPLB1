@@ -13,7 +13,7 @@
  */
 
 #include <iostream>
-#include <cstdlib>
+#include <cstdlib> ///Для rand - для генерации случайных чисел
 #include <ctime>
 
 /**
@@ -89,7 +89,7 @@ void multiplyByTwo(int (&arr)[10]) {
  * @return 0 при успешном завершении программы.
  */
 int main() {
-    srand(static_cast<unsigned int>(time(nullptr)));   /// Инициализация генератора
+    srand(static_cast<unsigned int>(time(nullptr)));   /// Инициализация генератора, потому что time выдаёт разные значения
 
     int myArray[10];                                    /// Статический массив из 10 элементов
 

@@ -62,7 +62,7 @@ void fillMatrix(int** matrix, int rows, int cols) {
                     std::cout << "Оценка должна быть в диапазоне 0..100. Повторите: ";
                 } else {
                     std::cin.clear();               /// Сброс флаг ошибки
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); /// Метод потока очистки буфера
                     std::cout << "Некорректный ввод. Повторите: ";
                 }
             }
