@@ -132,7 +132,8 @@ int main() {
     std::cout << "\nДемонстрация безопасного поведения после delete:\n";
     if (arr == nullptr) {
         std::cout << "Указатель arr == nullptr. Разыменование пропущено "
-                     "(защита от Segmentation Fault).\n";
+                     "(защита от Segmentation Fault).\n"
+                     "nullptr - это нулевая константа, которая ни на что не указывает.";
     } else {
         std::cout << "Значение по указателю: " << *arr << "\n";
     }

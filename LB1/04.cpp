@@ -10,9 +10,9 @@
  */
 
 #include <iostream>
-#include <string>
-#include <iomanip>
-#include <limits>
+#include <string> /// std::string - возможность вывести текст;
+#include <iomanip> /// std::setw - ширина полей вывода;
+#include <limits> /// std::numeric_limits - 
 
 /**
  * @brief Выделяет память под двумерный массив размером rows x cols.
